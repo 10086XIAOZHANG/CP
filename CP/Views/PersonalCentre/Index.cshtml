@@ -1,0 +1,382 @@
+﻿@using CP.Model
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/UserCSS.css" rel="stylesheet" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="~/Content/css/head.css" rel="stylesheet" />
+    <link href="~/Content/css/footer.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/js/ops.js"></script>
+    <script src="~/Content/js/UserJS.js"></script>
+    <title>UserCentre</title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("#grzx").addClass("selected");
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+
+        <link href="/Content/css/head.css" rel="stylesheet" />
+        <script>
+            $(function () {
+                $('.nav-crosswise>li').hover(
+                    function () {
+                        $(this).children('ul').stop(true, true).animate({ height: 'show' }, 'fast');
+                        $('.nav-crosswise>li>ul>li').hover(
+                            function () {
+                                $(this).children("span").css("display", "block");
+                            }, function () {
+                                $(this).children("span").css("display", "none");
+                            });
+                    }, function () {
+                        $(this).children('ul').stop(true, true).animate({ height: 'hide' }, 'fast');
+
+                    }
+                );
+            });
+        </script>
+        <div class="head">
+            <span class="logohead">
+            </span>
+            <div class="account">
+                <div class="account_meta account_faq" id="first">
+                    第一次使用CP校园社团平台？                            <a class="seg" href="/Home/Reg">立即注册</a>|<a class="seg" href="javascript.void(0)" target="_blank">使用帮助</a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav-crosswise">
+                    <li><a href="/Home/Index" id="head">首页</a></li>
+                    <li>
+                        <a href="/CooprationImpress/Index" id="styx">社团印象<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/CooprationImpress/CooprationIntroduction">社团简介</a></li>
+
+                            <li><span class="arrow-up"></span><a href="//CooprationImpress/EliteCoopration">社团风采</a></li>
+
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1402">社团文化</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1399">社团风景</a></li>
+
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1394">社团攻略</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Article/ArtWelcomeInfo/1733" id="yxxz">迎新须知<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtWelcomeInfo/1733">迎新快讯</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1377">入学准备</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1426">迎新流程</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Article/ArtInfo/1381" id="xzst">学在社团<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1381">活动介绍</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1388">活动交流</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Article/ArtInfo/1393" id="stfw">社团服务<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1393">活动申请</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1392">申请流程介绍</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Home/SignUp" id="bmtd">报名通道@*<span class="arrow-down"></span>*@</a>
+                    </li>
+                    <li>
+                        <a href="/PersonalCentre/Index" id="grzx" style="display:none">个人中心@*<span class="arrow-down"></span>*@</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="padding-bottom:20px;height:auto;">
+        <hr style="text-align:center;width:75%;color:#fa9406" />
+    </div>
+    <!--<div class="main-nav">-->
+    <div class="row">
+        <div class="u-menu">
+            <ul class="u-nav" id="user_menu">
+                <li class="item" id="user_menu_my" name="user_menu_my">
+                    <h3 class="t1">
+                        我的信息<span title="折叠"></span>
+                    </h3>
+                    <ul class="sub">
+                        <li><a href="/PersonalCentre/PersonalHome">个人主页</a></li>
+                        <li><a href="/PersonalCentre/PersonalData">个人资料</a></li>
+                        <li>
+                            <a href="/PersonalCentre/IdentifiManage">
+                                认证管理
+                            </a>
+                        </li>
+                        <li><a href="/PersonalCentre/PasswordInstall">密码设置</a></li>
+                        <li><a href="/PersonalCentre/RecommmendUserful">推荐有奖</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="user_menu_funds" name="user_menu_funds">
+                    <h3 class="t2">
+                         消息管理<span title="折叠"></span>
+                    </h3>
+                    <ul class="sub">
+                        <li><a href="/PersonalCentre/MyNews">我的消息</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="user_menu_loan" name="user_menu_loan">
+                    <h3 class="t3">
+                        活动管理<span title="折叠"></span>
+                    </h3>
+                    <ul class="sub">
+                        <li><a href="/PersonalCentre/MySignUp">我的选报</a></li>
+                        <li><a href="/PersonalCentre/MyApply">我的申请</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var menuClosed = Ops.getCookie('menuClosed');
+
+                $(".item h3 span").click(function () {
+
+                    menuClosed = Ops.getCookie('menuClosed');
+                    if (menuClosed == undefined || menuClosed == null) {
+                        menuClosed = '';
+                        Ops.setCookie('menuClosed', menuClosed);
+                    }
+                    //console.log(menuClosed+',click;;;');
+                    $(this).parent().parent().toggleClass('bg-slide');
+                    $(this).parent().parent().find(".sub").slideToggle('fast');
+
+                    if ($(this).attr('title') == '折叠') {
+                        $(this).attr('title', '展开');
+                    } else {
+                        $(this).attr('title', '折叠');
+                    }
+
+                    var pid = $(this).parent().parent().attr('id');
+
+                    if ($(this).parent().parent().hasClass('bg-slide') && menuClosed.indexOf("#" + pid + "#") == -1) {
+                        var cookies = menuClosed + '#' + pid + '#';
+                    } else {
+                        var cookies = menuClosed.replace("#" + pid + "#", '');
+                    }
+                    Ops.setCookie('menuClosed', cookies);
+                });
+
+                if (menuClosed != null) {
+                    var closedMatch = menuClosed.match(/([a-z_]+)/g);
+                    for (var i in closedMatch) {
+                        var idObj = $('#' + closedMatch[i]);
+                        idObj.toggleClass('bg-slide');
+                        idObj.find(".sub").hide();
+                        idObj.find('h3 span').attr('title', '展开');
+                    }
+                } else {
+                    $("#user_menu_loan h3 span").click();
+                }
+            </script>
+        </div>
+        <!-- /.u-menu -->
+        <div class="u-main">
+            <div class="u-box-wrap mt10">
+                <div class="u-box u-top" style="text-align: center;">
+                    <div style="font-size:20px; line-height:48px; float: left;white-space: nowrap;text-overflow:ellipsis;text-overflow: ellipsis;overflow:hidden;">
+                        <strong style="font-size:30px;">“</strong>
+                          @if (Session["userinfo"] != null)
+                            {
+                                var user = (UserInfo)Session["userinfo"];
+                               <span class="blue">@user.motto</span>
+                            }
+                        <strong style="font-size:30px;">”</strong>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="u-col-2 clearfix mt10">
+                <div class="u-box-wrap fl">
+                    <div class="u-box">
+                        <div class="u-til">
+                            <strong>个人信息</strong>
+                        </div>
+                          @if (Session["userinfo"] != null)
+                            {
+                                var user = (UserInfo)Session["userinfo"];
+                        <div class="uu-name">
+                            <a href="#" class="u-head">
+                                <img style="width: 64px; height: 64px;" src="@user.photoAddress" alt="个性头像" />
+                            </a>
+                            <strong class="u-name">
+                                姓
+                                名：
+                            </strong>
+                              
+                                @user.userName
+                            
+                                 <div class="u-state">
+                                生日：@user.birthday
+                            </div>
+                            <div class="u-state" style="margin-top: 6px;">
+                                爱好： @user.hobby
+                            </div>
+                           
+                        </div>
+                            }
+                        <ul class="uu-info clearfix" style="padding-bottom: 5px;">
+                            <li><span class="ico ico3"></span><span style="color: green;">身份已认证</span></li>
+                            <li>
+                                <span class="ico ico5"></span><span style="color: green;">手机已认证</span>
+                            </li>
+                            <li>
+                                <span class="ico ico4">
+                                </span><span style="color: green;">邮箱已认证</span>
+                            </li>
+                        </ul>
+                        <ul class="u-data-list" style="">
+                            <li>
+                                <span class="fl" style="padding-left: 10px;">
+                                    <a class="imp" href="#">最近待收日期</a>：
+                                    <i class="red">无</i>
+                                </span><span class="fr" style="padding-right: 10px;">
+                                    <a class="imp"
+                                       href="#">最近待收金额</a>： <i class="red">￥0.00</i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.u-box-wrap -->
+                <div class="u-box-wrap fr">
+                    <div class="u-box">
+                        <div class="u-til">
+                            <strong>私信消息</strong>
+                        </div>
+                        <ul class="u-data-list">
+                            <li>
+                                <strong>资金总额：</strong><span class="red">￥0.00</span><span class="more">
+                                    [ <a href="#" class="imp">资金记录</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>冻结总额：</strong><span class="red">￥0.00</span><span class="more">
+                                    [ <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>充值总额：</strong><span class="red">￥0.00</span><span class="more">
+                                    [ <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>提现总额：</strong><span class="red">￥0.00</span><span class="more">
+                                    [ <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.u-box-wrap -->
+            </div>
+            <!-- /.u-col-2 -->
+            <div class="u-col-2 clearfix mt10">
+                <div class="u-box-wrap fl">
+                    <div class="u-box">
+                        <div class="u-til">
+                            <strong class="fl">系统消息</strong>@*<span class="f14 fr"><a href="#"></a></span>*@
+                        </div>
+                        <ul class="u-data-list">
+                            <li>
+                                <strong>在投标中的投资：</strong><span class="red">0</span>&nbsp;笔 <span class="more">
+                                    [
+                                    <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>等待放款的投资：</strong><span class="red">0</span>&nbsp;笔 <span class="more">
+                                    [
+                                    <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>在还款中的投资：</strong><span class="red">0</span>&nbsp;笔 <span class="more">
+                                    [
+                                    <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>完成还款的投资：</strong><span class="red">0</span>&nbsp;笔 <span class="more">
+                                    [
+                                    <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.u-box-wrap -->
+                <div class="u-box-wrap fr">
+                    <div class="u-box">
+                        <div class="u-til">
+                            <strong class="fl">活动推荐</strong>@*<span class="f14 fr"><a href="#">贷款统计</a></span>*@
+                        </div>
+                        <ul class="u-data-list">
+                            <li>
+                                <strong>已完成还款的贷款：</strong><span class="red">0</span>&nbsp;笔 <span class="more">
+                                    [
+                                    <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>正在还款中的贷款：</strong><span class="red">0</span>&nbsp;笔 <span class="more">
+                                    [
+                                    <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                            <li>
+                                <strong>待还款总额：</strong><span class="red">￥0.00</span><span class="more">
+                                    [ <a href="#" class="imp">查看明细</a> ]
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.u-box-wrap -->
+            </div>
+            <!-- /.u-col-2 -->
+            <div class="u-bot mt10">
+                <span>这是您第&nbsp;<i class="red">@Session["loginNum"]次</i>&nbsp;登录CP校园平台！</span><span>
+                    &nbsp;&nbsp;上次登录时间： <i class="red">@Session["lastLoginTime"]</i>，
+                </span><span>
+                    地点：<span class="red">@Session["loginPlace"]</span>
+                </span>
+            </div>
+        </div>
+        <!-- /.u-main -->
+    </div>
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

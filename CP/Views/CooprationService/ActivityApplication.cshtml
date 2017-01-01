@@ -1,0 +1,185 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/formoid-solid-orange.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/common.css" rel="stylesheet" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="~/Content/css/head.css" rel="stylesheet" />
+    <link href="~/Content/css/footer.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/js/formoid-solid-orange.js"></script>
+    <script src="~/Content/js/Functions.js"></script>
+    <script src="~/Content/js/FocusSlide.js"></script>
+    <script src="~/Content/js/ScrollPic.js"></script>
+    <script src="~/Content/js/iepngfix_tilebg.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#stfw").addClass("selected");
+        });
+    </script>
+
+    <title>社团简介</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--head start-->
+        <!--top start -->
+        <div class="header">
+
+            <link href="/Content/css/head.css" rel="stylesheet" />
+            <script>
+                $(function () {
+                    $('.nav-crosswise>li').hover(
+                        function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'show' }, 'fast');
+                            $('.nav-crosswise>li>ul>li').hover(
+                                function () {
+                                    $(this).children("span").css("display", "block");
+                                }, function () {
+                                    $(this).children("span").css("display", "none");
+                                });
+                        }, function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'hide' }, 'fast');
+
+                        }
+                    );
+                });
+            </script>
+            <!--top end-->
+            <!--nav start-->
+            <div class="head">
+                <span class="logohead">
+                </span>
+                <div class="account">
+                    <div class="account_meta account_faq" id="first">
+                        第一次使用CP校园社团平台？                            <a class="seg" href="/Home/Reg">立即注册</a>|<a class="seg" href="javascript.void(0)" target="_blank">使用帮助</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav-crosswise">
+                        <li><a href="/Home/Index" id="head">首页</a></li>
+                        <li>
+                            <a href="/CooprationImpress/Index" id="styx">社团印象<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/CooprationIntroduction">社团简介</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/EliteCoopration">社团风采</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1402">社团文化</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1399">社团风景</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1394">社团攻略</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtWelcomeInfo/1733" id="yxxz">迎新须知<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtWelcomeInfo/1733">迎新快讯</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1377">入学准备</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1426">迎新流程</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1381" id="xzst">学在社团<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1381">活动介绍</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1388">活动交流</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1393" id="stfw">社团服务<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1393">活动申请</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1392">申请流程介绍</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Home/SignUp" id="bmtd">报名通道@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                        <li>
+                            <a href="/PersonalCentre/Index" id="grzx">个人中心@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--nav end-->
+
+        </div>
+        <div style="padding-bottom:10px;height:auto;">
+            <hr style="text-align:center;width:100%;color:#fa9406" />
+        </div>
+        <!--head end-->
+        <!--body start-->
+        <div id="body" style="margin-top:10px;">
+            <!--focus start-->
+            <!--<div id='FocusBG'>
+            <div id="Focus">
+            <ul>
+            <li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/1.jpg' alt='huiguer4' width='1080' height='400'/></a></li><li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/2.jpg' alt='huiguer3' width='1080' height='400'/></a></li><li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/3.jpg' alt='huiguer2' width='1080' height='400'/></a></li><li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/201268124713.jpg' alt='The enterprise website management system' width='1080' height='400'/></a></li>
+            </ul>
+            </div>
+            </div>-->
+            <!--foncus end-->
+            <div class="clearfix"></div>
+            <!--MainBlock start-->
+            <div class="MainBlock">
+                    <form enctype="multipart/form-data" class="formoid-solid-orange" style="background-color:#ffffff;font-size:14px;font-family:'Courier New',Courier,monospace;color:#34495E;max-width:1070px;min-width:150px" method="post">
+                        <div class="title"><h2>活动申请</h2></div>
+                        <div class="element-input"><label class="title"></label><div class="item-cont"><input class="medium" type="text" name="input" placeholder="活动标题" /><span class="icon-place"></span></div></div>
+                        <div class="element-textarea"><label class="title"></label><div class="item-cont"><textarea class="medium" name="textarea" cols="20" rows="5" placeholder="活动内容"></textarea><span class="icon-place"></span></div></div>
+                        <div class="element-input"><label class="title"></label><div class="item-cont"><input class="medium" type="text" name="input1" placeholder="活动地点" /><span class="icon-place"></span></div></div>
+                        <div class="element-input"><label class="title"></label><div class="item-cont"><input class="small" type="text" name="input2" placeholder="活动预算" /><span class="icon-place"></span></div></div>
+                        <div class="element-date"><label class="title"></label><div class="item-cont"><input class="medium" data-format="yyyy-mm-dd" type="date" name="date" placeholder="活动开始时间" /><span class="icon-place"></span></div></div>
+                        <div class="element-date"><label class="title"></label><div class="item-cont"><input class="medium" data-format="yyyy-mm-dd" type="date" name="date1" placeholder="活动结束时间" /><span class="icon-place"></span></div></div>
+                        <div class="element-file"><label class="title"></label><div class="item-cont"><label class="small"><div class="button">上传</div><input type="file" class="file_input" name="file" /><div class="file_text">选择</div><span class="icon-place"></span></label></div></div>
+                        <div class="submit"><input type="submit" value="提交申请" /></div>
+                    </form><p class="frmd"><a href="http://formoid.com/v29.php">web forms</a> Formoid.com 2.9</p>
+                    <script type="text/javascript" src="formoid_files/formoid1/formoid-solid-orange.js"></script>
+                    <!-- Stop Formoid form-->
+                    <div class="emptyclass"></div>
+
+            </div>
+            <!--MainBlock end-->
+            <div class="HeightTab clearfix"></div>
+
+        </div>
+        <!--body end-->
+        <div class="HeightTab clearfix"></div>
+    </div>
+
+    <!--footer start-->
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+    <!--footer end -->
+
+
+    <script type="text/javascript">
+        window.onerror = function () { return true; }
+    </script>
+
+
+</body>
+</html>

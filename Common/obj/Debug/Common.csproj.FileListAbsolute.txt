@@ -1,0 +1,14 @@
+C:\Users\峻\Desktop\holiday\CP\Common\bin\Debug\Common.dll
+C:\Users\峻\Desktop\holiday\CP\Common\bin\Debug\Common.pdb
+C:\Users\峻\Desktop\holiday\CP\Common\obj\Debug\Common.dll
+C:\Users\峻\Desktop\holiday\CP\Common\obj\Debug\Common.pdb
+C:\Users\峻\Desktop\holiday\CP\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+F:\holiday\CP\Common\bin\Debug\Common.dll
+F:\holiday\CP\Common\bin\Debug\Common.pdb
+F:\holiday\CP\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+F:\holiday\CP\Common\obj\Debug\Common.dll
+F:\holiday\CP\Common\obj\Debug\Common.pdb
+F:\holiday\CP\Common\bin\Debug\CP.Campus.Model.dll
+F:\holiday\CP\Common\bin\Debug\Newtonsoft.Json.dll
+F:\holiday\CP\Common\bin\Debug\CP.Campus.Model.pdb
+F:\holiday\CP\Common\bin\Debug\Newtonsoft.Json.xml

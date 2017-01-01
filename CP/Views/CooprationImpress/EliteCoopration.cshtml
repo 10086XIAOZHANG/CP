@@ -1,0 +1,255 @@
+﻿@using CP.Model;
+@using CP.Common;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="~/Content/css/inner.css" rel="stylesheet" />
+    <link href="~/Content/css/common.css" rel="stylesheet" />
+    @*<link href="~/Content/css/head.css" rel="stylesheet" />
+        <link href="~/Content/css/footer.css" rel="stylesheet" />*@
+    <link href="~/Content/css/pageBar.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="~/Content/js/Functions.js"></script>
+    <script src="~/Content/js/iepngfix_tilebg.js"></script>
+
+    <script type="text/javascript">
+    $(function () {
+        $("#styx").addClass("selected");
+    });
+    </script>
+    <style type="text/css">
+        .list {
+            padding: 0px 20px;
+        }
+
+        .dt {
+            font-family: Arial;
+            color: #666666;
+            line-height: 20px;
+            font-size: 10px;
+        }
+
+        .dd {
+            line-height: 25px;
+            border-bottom: 1px dotted #DDDDDD;
+        }
+
+        .contentP {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        #txtp {
+    line-height: 25px;
+    color: #333333;
+}
+    </style>
+    <title>社团风采</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--head start-->
+        <!--top start -->
+        <div class="header">
+
+            <link href="/Content/css/head.css" rel="stylesheet" />
+            <script>
+                $(function () {
+                    $('.nav-crosswise>li').hover(
+                        function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'show' }, 'fast');
+                            $('.nav-crosswise>li>ul>li').hover(
+                                function () {
+                                    $(this).children("span").css("display", "block");
+                                }, function () {
+                                    $(this).children("span").css("display", "none");
+                                });
+                        }, function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'hide' }, 'fast');
+
+                        }
+                    );
+                });
+            </script>
+            <!--top end-->
+            <!--nav start-->
+            <div class="head">
+                <span class="logohead">
+                </span>
+                <div class="account">
+                    <div class="account_meta account_faq" id="first">
+                        第一次使用CP校园社团平台？                            <a class="seg" href="/Home/Reg">立即注册</a>|<a class="seg" href="javascript.void(0)" target="_blank">使用帮助</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav-crosswise">
+                        <li><a href="/Home/Index" id="head">首页</a></li>
+                        <li>
+                            <a href="/CooprationImpress/Index" id="styx">社团印象<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/CooprationIntroduction">社团简介</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1432">社团风采</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1402">社团文化</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1399">社团风景</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1394">社团攻略</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtWelcomeInfo/1733" id="yxxz">迎新须知<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtWelcomeInfo/1733">迎新快讯</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1377">入学准备</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1426">迎新流程</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1381" id="xzst">学在社团<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1381">活动介绍</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1388">活动交流</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1393" id="stfw">社团服务<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1393">活动申请</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1392">申请流程介绍</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Home/SignUp" id="bmtd">报名通道@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                        <li>
+                            <a href="/PersonalCentre/Index" id="grzx">个人中心@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--nav end-->
+
+        </div>
+        <div style="padding-bottom:10px;height:auto;">
+            <hr style="text-align:center;width:100%;color:#fa9406" />
+        </div>
+        <!--head end-->
+        <!--body start-->
+        <div id="body">
+            <!--focus start-->
+            <div id="InnerBanner">
+
+            </div>
+            <!--foncus end-->
+            <div class="HeightTab clearfix"></div>
+            <!--inner start -->
+            <div class="inner">
+                <!--left start-->
+                <div class="left">
+                    <div class="Sbox">
+                        <div class="topic">
+                            <div class="TopicTitle"><a href='/关于社联'>社联简介</a></div></div>
+                        </div>
+                    <div class="img"><img src="/Content/images/Up_Images/2012521212111.jpg" width="250" height="110" alt="社联简介"></div>
+                    <div class="txt ColorLink"><p id="txtp">　　 江西师范大学学生社团联合会成立于 2001 年 10 月，是全校各学生社团联合组织，是经学校批准，在校团委领导下，具体负责全校学生社团日常管理的群众性学生团体。其主要任务统一管理各社团的工作，帮助解决社团的困难，协调社团间的活动，加强与兄弟院校相应团体的联系...<a href="/About">更多>></a></p></div>
+
+                    <div class="HeightTab clearfix"></div>
+                    <div class="Sbox">
+                        <div class="topic"><div class='TopicTitle'><a href='/News' style="color: #FFF;">热点新闻</a></div></div>
+                    </div>
+                    <div class="list">
+                        <dl><dt class="dt">2012/5/15</dt><dd class="dd"><a href='/html/5147925030.html' target='_blank' title='羽毛球协会简介'>羽毛球协会简介</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/6035144817.html' target='_blank' title='江西师范大学校级学生社团分类表'>江西师范大学校级学生社团分类表</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/874506477.html' target='_blank' title='江西师范大学微博协会简介'>江西师范大学微博协会简介</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/6295034522.html' target='_blank' title='关于江西师范大学学生社团联合会...'>关于江西师范大学学生社团联合会...</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/0795464438.html' target='_blank' title='江西师范大学学生社团联合会主席...'>江西师范大学学生社团联合会主席...</a></dd></dl>
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+                    <div class="Sbox">
+                        <div class="topic"><div class='TopicTitle'>友情链接</div></div>
+                        <div class="txt ColorLink">
+                            <p> <a href="http://www.jxnu.edu.cn/">江西师范大学</a></p>
+                            <p><a href="http://jwc.jxnu.edu.cn/"> 江西师范大学教务在线</a></p>
+                            <p><a href="http://tw.jxnu.edu.cn/">  江西师范大学团委</a></p>
+                        </div>
+
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+
+                </div>
+                <!--left end-->
+                <!--right start-->
+                <div class="right">
+                    <div class="Position"><span style="font-size:12px;">校园风采</span></div>
+                    <div class="HeightTab clearfix"></div>
+                    <!--main start-->
+                    <div class="main">
+
+                        <div class="ArticleList">
+                            @if(ViewData["cpActivityInfo"]!=null){
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <ul>
+                                    @foreach (cpActivityInfo cpactivityinfo in (List<cpActivityInfo>)ViewData["cpActivityInfo"])
+                                    {
+                                        var hrefaddr = cpactivityinfo.cpId + cpactivityinfo.cpAStartTime.Replace("-", "");
+                                    <tr>
+                                    <td width='90%' class='fw_t'>·<a href='/html/@hrefaddr' target='_blank'>@cpactivityinfo.cpATitle</a></td>
+                                    <td width='10%' class='fw_s'>[@cpactivityinfo.cpAStartTime]</td></tr>
+                                    }
+                                </ul>
+                            </table>
+                            }
+                            else { 
+                                <span>获取数据失败</span>
+                            
+                            }
+                            <div class="clearfix"></div>
+                            <div class="page_nav">@MvcHtmlString.Create(Common.PageBar.GetPageBar((int)ViewData["pageIndex"], (int)ViewData["pageCount"]))</div>
+                            @*<div class='t_page ColorLink'>Total: 8&nbsp;&nbsp;Current Page: <span class='FontRed'>1</span>/1<a href=index.html>First Page</a>&nbsp;&nbsp上一页&nbsp;&nbsp;<a href=index.html>1</a> &nbsp;&nbsp;下一页&nbsp;&nbsp;<a href=index.html>Last Page</a></div>*@
+                        </div>
+
+                    </div>
+                    <!--main end-->
+                </div>
+                <!--right end-->
+                <div class="clearfix"></div>
+            </div>
+            <!--inner end-->
+            <div class='clearfix'></div>
+        </div>
+        <!--body end-->
+        <div class="HeightTab clearfix"></div>
+    </div>
+
+    <!--footer start-->
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+    <!--footer end -->
+
+
+    <script type="text/javascript">
+        window.onerror = function () { return true; }
+    </script>
+
+
+</body>
+</html>

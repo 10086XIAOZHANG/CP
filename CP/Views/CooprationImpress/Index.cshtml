@@ -1,0 +1,246 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="~/Content/css/inner.css" rel="stylesheet" />
+    <link href="~/Content/css/common.css" rel="stylesheet" />
+    @*<link href="~/Content/css/head.css" rel="stylesheet" />
+    <link href="~/Content/css/footer.css" rel="stylesheet" />*@
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    
+    <script src="~/Content/js/Functions.js"></script>
+    <script src="~/Content/js/iepngfix_tilebg.js"></script>
+    
+    <script type="text/javascript">
+    $(function () {
+        $("#styx").addClass("selected");
+    });
+    </script>
+    <style type="text/css">
+        .list {
+            padding: 0px 20px;
+        }
+            .dt {
+                font-family: Arial;
+                color: #666666;
+                line-height: 20px;
+                font-size: 10px;
+            }
+            .dd {
+                line-height: 25px;
+                border-bottom: 1px dotted #DDDDDD;
+            }
+        .contentP {
+            padding-bottom:20px;
+            padding-top:20px;
+        }
+    </style>
+    <title>社团印象</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--head start-->
+        <!--top start -->
+        <div class="header">
+
+            <link href="/Content/css/head.css" rel="stylesheet" />
+            <script>
+                $(function () {
+                    $('.nav-crosswise>li').hover(
+                        function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'show' }, 'fast');
+                            $('.nav-crosswise>li>ul>li').hover(
+                                function () {
+                                    $(this).children("span").css("display", "block");
+                                }, function () {
+                                    $(this).children("span").css("display", "none");
+                                });
+                        }, function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'hide' }, 'fast');
+
+                        }
+                    );
+                });
+            </script>
+            <!--top end-->
+            <!--nav start-->
+            <div class="head">
+                <span class="logohead">
+                </span>
+                <div class="account">
+                    <div class="account_meta account_faq" id="first">
+                        第一次使用CP校园社团平台？                            <a class="seg" href="/Home/Reg">立即注册</a>|<a class="seg" href="javascript.void(0)" target="_blank">使用帮助</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav-crosswise">
+                        <li><a href="/Home/Index" id="head">首页</a></li>
+                        <li>
+                            <a href="/CooprationImpress/Index" id="styx">社团印象<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/CooprationIntroduction">社团简介</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/EliteCoopration">社团风采</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1402">社团文化</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1399">社团风景</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1394">社团攻略</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtWelcomeInfo/1733" id="yxxz">迎新须知<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtWelcomeInfo/1733">迎新快讯</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1377">入学准备</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1426">迎新流程</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1381" id="xzst">学在社团<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1381">活动介绍</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1388">活动交流</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1393" id="stfw">社团服务<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1393">活动申请</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1392">申请流程介绍</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Home/SignUp" id="bmtd">报名通道@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                        <li>
+                            <a href="/PersonalCentre/Index" id="grzx">个人中心@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--nav end-->
+
+        </div>
+        <div style="padding-bottom:10px;height:auto;">
+            <hr style="text-align:center;width:100%;color:#fa9406" />
+        </div>
+        <!--head end-->
+        <!--body start-->
+        <div id="body">
+            <!--focus start-->
+            <div id="InnerBanner">
+
+            </div>
+            <!--foncus end-->
+            <div class="HeightTab clearfix"></div>
+            <!--inner start -->
+            <div class="inner">
+                <!--left start-->
+                <div class="left">
+                    <div class="Sbox">
+                        <div class="topic"><div class='TopicTitle'>社团印象</div></div>
+                        <div class="blank">
+                        <ul>
+                            <li><a href='/CooprationImpress/CooprationIntroduction'>社团简介</a></li> 
+                            <li><a href='/CooprationImpress/EliteCoopration'>社团风采</a></li> 
+                            <li><a href='/About/Enviro'>社团文化</a></li> 
+                            <li><a href='/About/Business'>社团风景</a></li> 
+                            <li><a href='/About/Business'>社团攻略</a></li> 
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+                    <div class="Sbox">
+                        <div class="topic"><div class='TopicTitle'><a href='/News' style="color: #FFF;">热点新闻</a></div></div>
+                    </div>
+                    <div class="list">
+                        <dl ><dt class="dt">2012/5/15</dt><dd class="dd"><a href='/html/5147925030.html' target='_blank' title='羽毛球协会简介'>羽毛球协会简介</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/6035144817.html' target='_blank' title='江西师范大学校级学生社团分类表'>江西师范大学校级学生社团分类表</a></dd><dt class ="dt">2012/5/23</dt><dd class="dd"><a href='/html/874506477.html' target='_blank' title='江西师范大学微博协会简介'>江西师范大学微博协会简介</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/6295034522.html' target='_blank' title='关于江西师范大学学生社团联合会...'>关于江西师范大学学生社团联合会...</a></dd><dt class="dt">2012/5/23</dt><dd class="dd"><a href='/html/0795464438.html' target='_blank' title='江西师范大学学生社团联合会主席...'>江西师范大学学生社团联合会主席...</a></dd></dl>
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+                    <div class="Sbox">
+                        <div class="topic"><div class='TopicTitle'>友情链接</div></div>
+                        <div class="txt ColorLink">
+                            <p> <a href="http://www.jxnu.edu.cn/">江西师范大学</a></p>
+                            <p><a href="http://jwc.jxnu.edu.cn/"> 江西师范大学教务在线</a></p>
+                            <p><a href="http://tw.jxnu.edu.cn/">  江西师范大学团委</a></p>
+                        </div>
+
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+
+                </div>
+                <!--left end-->
+                <!--right start-->
+                <div class="right">
+                    <div class="Position"><span style="font-size:12px;">社团印象</span></div>
+                    <div class="HeightTab clearfix"></div>
+                    <!--main start-->
+                    <div class="main">
+
+                        <!--content start-->
+                        <div class="content" style="width:auto">
+                            <h1 style="text-align:center;margin-bottom:20px;color:#666666">社团印象</h1>
+                            <div class="maincontent clearfix">
+                                <p >　　  社团作为大学校园生活中必不可少的群众性组织，其内容形式丰富多彩，包罗万象。大学是实践炫动的舞台，各个社团以其独特的魅力吸引了广大学生的积极参与。社团也充分挖掘了学生的艺术，运动潜力。不仅可以让同学之间以兴趣为基础获得更好的友谊相处，而且可以在这些社团耀眼的舞台上施展自己的才华。社团同样以服务学生为宗旨，促进校园生活的生动多彩，同学间的和谐相处。</p>
+                                <img class="contentP" src="~/Content/images/up_images/2016051805.jpg" alt="Alternate Text" />
+                                <p >　　  喜欢追寻梦想，走向远方，却总徘徊于现实，感受人世沧桑；想要随风飘扬，随波逐浪，却总经不起风浪，步步踉跄；希望插上翅膀，展翅颉颃，却颤栗于悬崖，被时光流放。</p>
+                                <img class="contentP" src="~/Content/images/up_images/2016051804.jpg" alt="Alternate Text" />
+                                <p >　　  曾几何时，谢谢你们的支持，也许没有你们，我也不会在这里说话了，也没能说这些话。谢谢那些一直支持我的人，衷心的谢谢你们。我想同你们一起奋斗，一起努力，一起建设我们的骄傲，努力让下一届的人可以更好的发展，有更好的根基。</p>
+                                <img class="contentP" src="~/Content/images/up_images/2016051802.jpg" alt="Alternate Text" />
+                                <p >　　  同你们在舞台上快乐着，团结一致，共同奋斗，因为我们有同样的兴趣。</p>
+                                <img class ="contentP" src="/Content/images/up_images/2016051801.jpg" alt="Alternate Text" />
+                                <p >　　  一个团队需要的是执行力，没有执行力的团队犹如一盘散沙，一个团队少了谁照样可以运转，但一个团队少了谁都不行，因为我们是一个团队，一个集体。团结一心，我们将不辱使命，以更加饱满的热情与自信，迎接新的挑战，创造新的辉煌。</p>
+                            </div>
+                        </div>
+                        <!--content end-->
+
+                    </div>
+                    <!--main end-->
+                </div>
+                <!--right end-->
+                <div class="clearfix"></div>
+            </div>
+            <!--inner end-->
+            <div class='clearfix'></div>
+        </div>
+        <!--body end-->
+        <div class="HeightTab clearfix"></div>
+    </div>
+
+    <!--footer start-->
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+    <!--footer end -->
+
+
+    <script type="text/javascript">
+        window.onerror = function () { return true; }
+    </script>
+
+
+</body>
+</html>

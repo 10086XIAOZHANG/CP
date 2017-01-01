@@ -1,0 +1,307 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/UserCSS.css" rel="stylesheet" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="~/Content/css/head.css" rel="stylesheet" />
+    <link href="~/Content/css/footer.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/js/ops.js"></script>
+    <script src="~/Content/js/UserJS.js"></script>
+    <title>UserCentre</title>
+    <style type="text/css">
+        #sendMsg {
+          width:80px;
+          padding-left:0px;
+        } 
+         .i-item-btn {
+            padding: 5px 190px;
+        }
+        .i-item-btn2 {
+          padding-left:0;
+        
+        }
+      
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("#grzx").addClass("selected");
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+
+        <link href="/Content/css/head.css" rel="stylesheet" />
+        <script>
+            $(function () {
+                $('.nav-crosswise>li').hover(
+                    function () {
+                        $(this).children('ul').stop(true, true).animate({ height: 'show' }, 'fast');
+                        $('.nav-crosswise>li>ul>li').hover(
+                            function () {
+                                $(this).children("span").css("display", "block");
+                            }, function () {
+                                $(this).children("span").css("display", "none");
+                            });
+                    }, function () {
+                        $(this).children('ul').stop(true, true).animate({ height: 'hide' }, 'fast');
+
+                    }
+                );
+            });
+        </script>
+        <div class="head">
+            <span class="logohead">
+            </span>
+            <div class="account">
+                <div class="account_meta account_faq" id="first">
+                    第一次使用CP校园社团平台？                            <a class="seg" href="/Home/Reg">立即注册</a>|<a class="seg" href="javascript.void(0)" target="_blank">使用帮助</a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav-crosswise">
+                    <li><a href="/Home/Index" id="head">首页</a></li>
+                    <li>
+                        <a href="/Article/ArtInfo/1375" id="styx">社团印象<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1375">社团简介</a></li>
+
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1432">社团风采</a></li>
+
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1402">社团文化</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1399">社团风景</a></li>
+
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1394">社团攻略</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Article/ArtWelcomeInfo/1733" id="yxxz">迎新须知<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtWelcomeInfo/1733">迎新快讯</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1377">入学准备</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1426">迎新流程</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Article/ArtInfo/1381" id="xzst">学在社团<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1381">活动介绍</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1388">活动交流</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Article/ArtInfo/1393" id="stfw">社团服务<span class="arrow-down"></span></a>
+                        <ul>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1393">活动申请</a></li>
+                            <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1392">申请流程介绍</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Home/SignUp" id="bmtd">报名通道@*<span class="arrow-down"></span>*@</a>
+                    </li>
+                    <li>
+                        <a href="/PersonalCentre/Index" id="grzx">个人中心@*<span class="arrow-down"></span>*@</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="padding-bottom:20px;height:auto;">
+        <hr style="text-align:center;width:75%;color:#fa9406" />
+    </div>
+    <!--<div class="main-nav">-->
+    <div class="row">
+        <div class="u-menu">
+            <ul class="u-nav" id="user_menu">
+                <li class="item" id="user_menu_my" name="user_menu_my">
+                    <h3 class="t1">
+                        我的信息<span title="折叠"></span>
+                    </h3>
+                    <ul class="sub">
+                        <li><a href="/PersonalCentre/PersonalHome">个人主页</a></li>
+                        <li><a href="/PersonalCentre/PersonalData">个人资料</a></li>
+                        <li>
+                            <a class="current" href="/PersonalCentre/IdentifiManage">
+                                认证管理
+                            </a>
+                        </li>
+                        <li><a href="/PersonalCentre/PasswordInstall">密码设置</a></li>
+                        <li><a href="/PersonalCentre/RecommmendUserful">推荐有奖</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="user_menu_funds" name="user_menu_funds">
+                    <h3 class="t2">
+                        消息管理<span title="折叠"></span>
+                    </h3>
+                    <ul class="sub">
+                        <li><a href="/PersonalCentre/MyNews">我的消息</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="user_menu_loan" name="user_menu_loan">
+                    <h3 class="t3">
+                        活动管理<span title="折叠"></span>
+                    </h3>
+                    <ul class="sub">
+                        <li><a href="/PersonalCentre/MySignUp">我的选报</a></li>
+                        <li><a href="/PersonalCentre/MyApply">我的申请</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var menuClosed = Ops.getCookie('menuClosed');
+
+                $(".item h3 span").click(function () {
+
+                    menuClosed = Ops.getCookie('menuClosed');
+                    if (menuClosed == undefined || menuClosed == null) {
+                        menuClosed = '';
+                        Ops.setCookie('menuClosed', menuClosed);
+                    }
+                    //console.log(menuClosed+',click;;;');
+                    $(this).parent().parent().toggleClass('bg-slide');
+                    $(this).parent().parent().find(".sub").slideToggle('fast');
+
+                    if ($(this).attr('title') == '折叠') {
+                        $(this).attr('title', '展开');
+                    } else {
+                        $(this).attr('title', '折叠');
+                    }
+
+                    var pid = $(this).parent().parent().attr('id');
+
+                    if ($(this).parent().parent().hasClass('bg-slide') && menuClosed.indexOf("#" + pid + "#") == -1) {
+                        var cookies = menuClosed + '#' + pid + '#';
+                    } else {
+                        var cookies = menuClosed.replace("#" + pid + "#", '');
+                    }
+                    Ops.setCookie('menuClosed', cookies);
+                });
+
+                if (menuClosed != null) {
+                    var closedMatch = menuClosed.match(/([a-z_]+)/g);
+                    for (var i in closedMatch) {
+                        var idObj = $('#' + closedMatch[i]);
+                        idObj.toggleClass('bg-slide');
+                        idObj.find(".sub").hide();
+                        idObj.find('h3 span').attr('title', '展开');
+                    }
+                } else {
+                    $("#user_menu_loan h3 span").click();
+                }
+            </script>
+        </div>
+        <div class="u-main">
+            <div id="tab_menu">
+                <ul class="u-tab clearfix">
+                    <li class="current"><a>手机认证</a></li>
+                    <li><a>邮箱认证</a></li>
+                </ul>
+            </div>
+            <div id="tab_box">
+                <div class="u-form-wrap">
+                    <div class="uf-tips">
+                        <span class="red">为了社团活动能够有效地通知到您，请绑定手机号，此手机号也可用于登录和找回密码</span>
+                    </div>
+                    <div>
+                        <div class="i-item i-long-item">
+                            <label class="i-til">
+                                <span class="red">*</span>手&nbsp;机&nbsp;号：
+                            </label><div class="i-right">
+                                <input id="iPhone_number" name="phoneNumber" type="text" class="i-inp" style="width: 130px;" />
+                                <p class="tips red">
+                                    (*用户电话，格式为(133********))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="i-item i-long-item">
+                            <label class="i-til">
+                                <span class="red">*</span>手&nbsp;机&nbsp;验&nbsp;证&nbsp;码：
+                            </label><div class="i-right">
+                                <input id="iPhone_number_identifi" name="phoneNumberIdentifi" type="text" class="i-inp" style="width: 130px;" />
+                                <input id="sendMsg" name="sendMsg" type="button" value="发送验证码"/>
+                            </div>
+                        </div>
+                        <div class="i-item-btn i-item-btn2" style="text-align: center; height: 50px; line-height: 50px;">
+                            <input type="hidden" name="do" value="" />
+                            <button type="button" do="save" class="i-btn-txt1" style="height:27px;width:71px;">
+                                确定
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-form-wrap" style="display: none;">
+                    <div class="uf-tips">
+                        <span class="red">为了社团活动能够有效地通知到您，请绑定邮箱号，此邮箱号也可用于找回密码</span>
+                    </div>
+                    <div>
+                        <div class="i-item i-long-item">
+                            <label class="i-til">
+                                <span class="red">*</span>验&nbsp;证&nbsp;邮&nbsp;箱&nbsp;号：
+                            </label><div class="i-right">
+                                <input id="iPhone_number" name="phoneNumber" type="text" class="i-inp" style="width: 130px;" />
+                                <p class="tips red">
+                                    (*用户邮箱，格式为(*****@@qq.com))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="i-item-btn i-item-btn2" style="text-align: center; height: 50px; line-height: 50px;">
+                            <input type="hidden" name="do" value="" />
+                            <button type="button" do="save" class="i-btn-txt1" style="height:27px;width:71px;">
+                                发送邮件
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            var $div_li = $("#tab_menu ul li");
+
+            $div_li.click(function () {
+
+                $(this).addClass("current").siblings().removeClass("current");
+
+                var div_index = $div_li.index(this);
+
+                $("#tab_box>div").eq(div_index).show().siblings().hide();
+
+            }).hover(function () {
+
+                $(this).addClass("hover");
+
+            }, function () {
+
+                $(this).removeClass("hover");
+
+            });
+
+        </script>
+    </div>
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

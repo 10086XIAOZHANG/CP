@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.foot{
+	width:1024px;
+	margin:auto;
+	height:90px;
+	overflow:hidden;
+	background:#7C8186;}
+.logofoot{
+	width:60px;
+	height:60px;
+	display:inline-block;
+	float:left;
+    background:url(../img/foot-logo.png);
+    background-size:100%;
+	margin:15px;
+  margin-left: 0;}
+.adress{
+	float:left;
+	width:400px;
+	line-height:30px;
+	color:#fff;
+	font-size:12px;
+	margin-top:15px;}
+.adress span,.copyright span{
+	display:block;}
+.adress span a {
+  color: #fff;
+  text-decoration: none;
+}
+.copyright{
+	width:250px;
+	line-height:30px;
+	float:right;
+	text-align:right;
+	margin-top:15px;
+	font-size:12px;
+	color:#fff;}

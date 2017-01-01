@@ -1,0 +1,374 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/user-register.css" rel="stylesheet" />
+    <title>SignUp</title>
+
+    <!--[if lt IE 9]>
+    
+<script src="~/Content/js/html5shiv.js"></script>
+    <![endif]-->
+
+    @*<script src="~/Content/js/html5shiv.js"></script>*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/css/normalize.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/css/user-register.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery.idealforms.min.css" rel="stylesheet" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="/Content/css/head.css" rel="stylesheet" />
+    <link href="~/Content/css/footer.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        $(function () {
+            var checkeds = null;
+        $("#newByactionclass").change(function () {
+            checkeds = $(this).val();
+        });
+        $("#look").click(function () {
+            $.ajax({
+                url: "/Home/Search",
+                type: "POST",
+                dataType: "html",
+                data: { checks: checkeds },
+                success: function (data) {
+                    switch (data) {
+                        case "xskjl":
+                            document.getElementById(data).style.display = "";//显示
+                            document.getElementById("tyxxl").style.display = "none";//隐藏
+                            document.getElementById("jnpxl").style.display = "none";//隐藏
+                            document.getElementById("llyjl").style.display = "none";//隐藏
+                            document.getElementById("shsjl").style.display = "none";//隐藏
+                            document.getElementById("wxysl").style.display = "none";//隐藏
+                            break;
+                        case "tyxxl":
+                            document.getElementById(data).style.display = "";//显示
+                            document.getElementById("xskjl").style.display = "none";//隐藏
+                            document.getElementById("jnpxl").style.display = "none";//隐藏
+                            document.getElementById("llyjl").style.display = "none";//隐藏
+                            document.getElementById("shsjl").style.display = "none";//隐藏
+                            document.getElementById("wxysl").style.display = "none";//隐藏
+                            break;
+                        case "jnpxl":
+                            document.getElementById(data).style.display = "";//显示
+                            document.getElementById("xskjl").style.display = "none";//隐藏
+                            document.getElementById("tyxxl").style.display = "none";//隐藏
+                            document.getElementById("llyjl").style.display = "none";//隐藏
+                            document.getElementById("shsjl").style.display = "none";//隐藏
+                            document.getElementById("wxysl").style.display = "none";//隐藏
+                            break;
+                        case "llyjl":
+                            document.getElementById(data).style.display = "";//显示
+                            document.getElementById("xskjl").style.display = "none";//隐藏
+                            document.getElementById("tyxxl").style.display = "none";//隐藏
+                            document.getElementById("jnpxl").style.display = "none";//隐藏
+                            document.getElementById("shsjl").style.display = "none";//隐藏
+                            document.getElementById("wxysl").style.display = "none";//隐藏
+                            break;
+                        case "shsjl":
+                            document.getElementById(data).style.display = "";//显示
+                            document.getElementById("xskjl").style.display = "none";//隐藏
+                            document.getElementById("tyxxl").style.display = "none";//隐藏
+                            document.getElementById("jnpxl").style.display = "none";//隐藏
+                            document.getElementById("llyjl").style.display = "none";//隐藏
+                            document.getElementById("wxysl").style.display = "none";//隐藏
+                            break;
+                        case "wxysl": 
+                            document.getElementById(data).style.display = "";//显示
+                            document.getElementById("xskjl").style.display = "none";//隐藏
+                            document.getElementById("tyxxl").style.display = "none";//隐藏
+                            document.getElementById("jnpxl").style.display = "none";//隐藏
+                            document.getElementById("llyjl").style.display = "none";//隐藏
+                            document.getElementById("shsjl").style.display = "none";//隐藏
+                            break;
+                        case "alll":
+                            document.getElementById("xskjl").style.display = "";//显示
+                            document.getElementById("tyxxl").style.display = "";//显示
+                            document.getElementById("jnpxl").style.display = "";//显示
+                            document.getElementById("llyjl").style.display = "";//显示
+                            document.getElementById("shsjl").style.display = "";//显示
+                            document.getElementById("wxysl").style.display = "";//显示
+                            break;
+                    }
+                }
+
+            });
+           
+        });
+    });
+
+    </script>
+    <style type="text/css">
+        body {
+            font: normal 15px/1.5 Arial, Helvetica, Free Sans, sans-serif;
+            color: #222;
+            background: url(pattern.png);
+            overflow-y: scroll;
+            padding: 10px 0 0 0;
+        }
+       .zs {
+            font-family: "微软雅黑" !important;
+            color: #8d8d8d;
+            text-align:center;
+            padding-left:10px;
+            line-height:40px;
+           
+        }
+        #my-form {
+            width: 80%;
+            margin: 0 auto 12px auto;
+            border: 1px solid #ccc;
+            padding: 3em;
+            border-radius: 3px;
+            box-shadow: 0 0 2px rgba(0,0,0,.2);
+        }
+        .page-sidebar {
+
+        }
+            .gpk2 {
+    padding: -10px;
+    font: normal 12px/25px simsun;
+    margin-top: -100px;
+    margin-right:20px;
+}
+        #comments {
+            width: 350px;
+            height: 100px;
+        }
+        .head div {
+    font: normal 18px/18px "microsoft yahei",arial,sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 50px;
+    font-family: "微软雅黑" !important;}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <a href="/Home/Index">
+            <span class="logohead">
+            </span>
+        </a>
+        <div>填写报名表</div>
+        </div>
+        <div class="row">
+
+            <div class="eightcol last">
+
+                <!-- Begin Form -->
+
+                <form id="my-form">
+
+                    <section name="填写个人基本信息">
+                        <div style="float:left;margin-left:10px">
+                            <div><label>用户名:</label><input id="userName" name="userName" type="text" /><label class="zs">*CP校园社团平台用户名</label></div>
+                            <div><label>学号:</label><input id="userId" name="userId" type="text" /><label class="zs">&nbsp;*学号的位数为10位</label></div>
+                            <div><label>姓名:</label><input id="name" name="name" type="text" /><label class="zs">&nbsp;*用户真实姓名</label></div>
+                            <div><label>邮箱:</label><input id="email" name="email" data-ideal="required email" type="email" /><label class="zs">&nbsp;*用户邮箱，格式为(*****@@qq.com)</label></div>
+                            <div><label>电话号码：</label><input id="newPhoneNumber" name="newPhoneNumber" type="text" /><label class="zs">&nbsp;*用户电话，格式为(133********)</label></div>
+                            @*<div><label>上传头像:</label><input id="file" name="file" multiple type="file" /></div>*@
+                            <div><label>学院:</label><input id="newSchoolDepartment" name="newSchoolDepartment" type="text" /><label class="zs">&nbsp;*用户所在学院，如(计算机信息工程学院)</label></div>
+                            <div><label>专业:</label><input id="newMajor" name="newMajor" type="text" /><label class="zs">&nbsp;*用户所学的专业，如(物联网工程)</label></div>
+                            <div><label>年级:</label>@Html.DropDownList("grade", ViewData["grade"] as SelectList,"--请选择年级--", new { id = "newGrade", name = "newGrade" })<label class="zs">  *用户入学学年</label></div>
+                            <div><label>班别:</label><input id="newClassWide" name="newClassWide" type="text" /><label class="zs">&nbsp;*用户所在班级，如(物联网工程2班)</label></div>
+                        </div>
+                        <div class="page-sidebar" style="float:right;">
+                            <div class="gpk2" style="margin-top:-20px;margin-left:-100px">
+                                <dl>
+                                    <dt>填写个人的基本信息：</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>填写个人的基本信息，是选报社团的信息基础</li>
+                                            <li>当用户登录后个人的一些基本信息将自动填写</li>
+                                            <li>不需要选报时再次手动填写个人信息</li>
+                                            <li>如果个人中心的个人信息资料不完整，请到个人信息中完善个人资料</li>
+                                            <li>以方便选报社团</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                            </div>
+                        <div style="clear:right"></div>
+                    </section>
+
+                    <section name="填写选报社团信息">
+                        <div style="float:left;margin-left:10px">
+                            <div><label>按类别查找:</label>@Html.DropDownList("byactionclass", ViewData["byactionclass"] as SelectList, "--请选择类别--", new { @id = "newByactionclass", @name = "newByactionclass" })<button id="look" type="button">查找</button></div>
+                            <div id="xskjl" style="display: none;">
+                                <label>学术科技类:</label>
+                                <label><input type="checkbox" name="khxh" value="khxh" />科幻协会</label>
+                                <label><input type="checkbox" name="dnahzxh" value="dnahzxh" />电脑爱好者协会</label>
+                                <label><input type="checkbox" name="dzkjxh" value="dzkjxh" />电子科技协会</label>
+                                <label><input type="checkbox" name="dzswxh" value="dzswxh" />电子商务协会</label>
+                                <label><input type="checkbox" name="clhxxh" value="clhxxh" />材料科学协会</label>
+                                <label><input type="checkbox" name="sxjmxh" value="sxjmxh" />数学建模协会</label>
+                                <label><input type="checkbox" name="ahzxh" value="ahzxh" />爱好者协会</label>
+                            </div>
+                            <div id="tyxxl" style="display: none;">
+                                <label>体育休闲类:</label>
+                                <label><input type="checkbox" name="msahzxh" value="msahzxh" />魔术爱好者协会</label>
+                                <label><input type="checkbox" name="zqxh" value="zqxh" />足球协会</label>
+                                <label><input type="checkbox" name="ppqxh" value="ppqxh" />乒乓球协会</label>
+                                <label><input type="checkbox" name="ymqxh" value="ymqxh" />羽毛球协会</label>
+                                <label><input type="checkbox" name="dzjjxh" value="dzjjxh" />电子竞技协会</label>
+                                <label><input type="checkbox" name="qpxh" value="qpxh" />棋牌协会</label>
+                                <label><input type="checkbox" name="lxzst" value="lxzst" />旅行者社团</label>
+                                <label><input type="checkbox" name="hylhs" value="hylhs" />幻影轮滑社</label>
+                                <label><input type="checkbox" name="jmcxh" value="jmcxh" />健美操协会</label>
+                                <label><input type="checkbox" name="vdszwtjws" value="vdszwtjws" />VDS震舞糖街舞社</label>
+                            </div>
+                            <div id="jnpxl" style="display: none;">
+                                <label>技能培养类:</label>
+                                <label><input type="checkbox" name="wbxh" value="wbxh" />微博协会</label>
+                            </div>
+                            <div id="llyjl" style="display: none;">
+                                <label>理论研究类:</label>
+                                <label><input id="none" name="none" value="无" /></label>
+                            </div>
+                            <div id="shsjl" style="display: none;">
+                                <label>社会实践类:</label>
+                                <label><input id="none" name="none" value="无" /></label>
+                            </div>
+                            <div id="wxysl" style="display: none;">
+                                <label>文学艺术类:</label>
+                                <label><input id="none" name="none" value="无" /></label>
+                            </div>
+                        </div>
+                        <div class="page-sidebar" style="float:right;">
+                            <div class="gpk2" style="margin-top:-20px;margin-left:-80px">
+                                <dl>
+                                    <dt>填写选报社团信息：</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>填写选报社团信息，是选报社团的信息基础</li>
+                                            <li>可对自己选报的社团进行勾选</li>
+                                            <li>可选择一个或多个自己心仪的社团</li>
+                                            <li>若想了解社团资料，点击<a href="javasript.void(0)">更多</a></li>
+                                            <li>以方便选报社团</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div style="clear:right"></div>
+                    </section>
+
+                    <section name="选报完成">
+                        <div style="float:left;margin-left:10px">
+                            <div><label>备注:</label><textarea id="comments" name="comments" style="height:350px"></textarea></div>
+                            </div>
+                        <div class="page-sidebar" style="float:right;">
+                            <div class="gpk2" style="margin-top:-20px;margin-left:-80px">
+                                <dl>
+                                    <dt>选报注意事项：</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>填写选报社团信息，是选报社团的信息基础</li>
+                                            <li>选报社团的审核状态，可在<a href="javascript.void(0)">个人中心</a>中查看</li>
+                                            <li>当审核通过后，就可在社联缴费中心缴费</li>
+                                            <li>完成整个报名过程</li>
+                                            <li>最后报名成功</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div style="clear:right"></div>
+</section>
+
+                    <div><hr /></div>
+
+                    <div>
+                        <button type="submit">提交</button>
+                        <button id="reset" type="button">重置</button>
+                    </div>
+
+                </form>
+
+                <!-- End Form -->
+
+            </div>
+
+        </div>
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Content/js/jquery-ui.min.js"></script>
+        <script src="~/Content/js/jquery.idealforms.js"></script>
+        <script type="text/javascript">
+            var options = {
+
+                onFail: function () {
+                    alert($myform.getInvalid().length + ' invalid fields.')
+                },
+
+                inputs: {
+                    'password': {
+                        filters: 'required pass',
+                    },
+                    'username': {
+                        filters: 'required username',
+                        data: {
+                            //ajax: { url:'validate.php' }
+                        }
+                    },
+                    'file': {
+                        filters: 'extension',
+                        data: { extension: ['jpg'] }
+                    },
+                    'comments': {
+                        filters: 'min max',
+                        data: { min: 50, max: 200 }
+                    },
+                    'states': {
+                        filters: 'exclude',
+                        data: { exclude: ['default'] },
+                        errors: {
+                            exclude: '选择国籍.'
+                        }
+                    },
+                    'langs[]': {
+                        filters: 'min max',
+                        data: { min: 2, max: 3 },
+                        errors: {
+                            min: 'Check at least <strong>2</strong> options.',
+                            max: 'No more than <strong>3</strong> options allowed.'
+                        }
+                    }
+                }
+
+            };
+
+            var $myform = $('#my-form').idealforms(options).data('idealforms');
+
+            $('#reset').click(function () {
+                $myform.reset().fresh().focusFirst()
+            });
+
+            $myform.focusFirst();
+        </script>
+
+</body>
+</html>

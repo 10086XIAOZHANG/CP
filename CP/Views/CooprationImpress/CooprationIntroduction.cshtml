@@ -1,0 +1,318 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/common.css" rel="stylesheet" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <link href="~/Content/css/head.css" rel="stylesheet" />
+    <link href="~/Content/css/footer.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="~/Content/js/Functions.js"></script>
+    <script src="~/Content/js/FocusSlide.js"></script>
+    <script src="~/Content/js/ScrollPic.js"></script>
+    <script src="~/Content/js/iepngfix_tilebg.js"></script>
+
+    <script type="text/javascript">
+    $(function () {
+        $("#styx").addClass("selected");
+    });
+    </script>
+
+    <title>社团简介</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--head start-->
+        <!--top start -->
+        <div class="header">
+
+            <link href="/Content/css/head.css" rel="stylesheet" />
+            <script>
+                $(function () {
+                    $('.nav-crosswise>li').hover(
+                        function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'show' }, 'fast');
+                            $('.nav-crosswise>li>ul>li').hover(
+                                function () {
+                                    $(this).children("span").css("display", "block");
+                                }, function () {
+                                    $(this).children("span").css("display", "none");
+                                });
+                        }, function () {
+                            $(this).children('ul').stop(true, true).animate({ height: 'hide' }, 'fast');
+
+                        }
+                    );
+                });
+            </script>
+            <!--top end-->
+            <!--nav start-->
+            <div class="head">
+                <span class="logohead">
+                </span>
+                <div class="account">
+                    <div class="account_meta account_faq" id="first">
+                        第一次使用CP校园社团平台？                            <a class="seg" href="/Home/Reg">立即注册</a>|<a class="seg" href="javascript.void(0)" target="_blank">使用帮助</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav-crosswise">
+                        <li><a href="/Home/Index" id="head">首页</a></li>
+                        <li>
+                            <a href="/CooprationImpress/Index" id="styx">社团印象<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/CooprationIntroduction">社团简介</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/CooprationImpress/EliteCoopration">社团风采</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1402">社团文化</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1399">社团风景</a></li>
+
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1394">社团攻略</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtWelcomeInfo/1733" id="yxxz">迎新须知<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtWelcomeInfo/1733">迎新快讯</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1377">入学准备</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1426">迎新流程</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1381" id="xzst">学在社团<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1381">活动介绍</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1388">活动交流</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Article/ArtInfo/1393" id="stfw">社团服务<span class="arrow-down"></span></a>
+                            <ul>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1393">活动申请</a></li>
+                                <li><span class="arrow-up"></span><a href="/Article/ArtInfo/1392">申请流程介绍</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Home/SignUp" id="bmtd">报名通道@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                        <li>
+                            <a href="/PersonalCentre/Index" id="grzx">个人中心@*<span class="arrow-down"></span>*@</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--nav end-->
+
+        </div>
+        <div style="padding-bottom:10px;height:auto;">
+            <hr style="text-align:center;width:100%;color:#fa9406" />
+        </div>
+        <!--head end-->
+        <!--body start-->
+        <div id="body" style="margin-top:10px;">
+            <!--focus start-->
+            <!--<div id='FocusBG'>
+            <div id="Focus">
+            <ul>
+            <li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/1.jpg' alt='huiguer4' width='1080' height='400'/></a></li><li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/2.jpg' alt='huiguer3' width='1080' height='400'/></a></li><li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/3.jpg' alt='huiguer2' width='1080' height='400'/></a></li><li><a href='http://www.huiguer.com/' target='_blank'><img src='/Content/images/up_images/201268124713.jpg' alt='The enterprise website management system' width='1080' height='400'/></a></li>
+            </ul>
+            </div>
+            </div>-->
+            <!--foncus end-->
+            <div class="clearfix"></div>
+            <!--MainBlock start-->
+            <div class="MainBlock">
+                <!--right start-->
+                <div class="right">
+                    <div class="topic">
+                        <div class="TopicTitle"><a href='/关于社联'>社联简介</a></div>
+                    </div>
+                    <div class="img"><img src="/Content/images/Up_Images/2012521212111.jpg" width="250" height="110" alt="社联简介"></div>
+                    <div class="txt ColorLink"><p>　　 江西师范大学学生社团联合会成立于 2001 年 10 月，是全校各学生社团联合组织，是经学校批准，在校团委领导下，具体负责全校学生社团日常管理的群众性学生团体。其主要任务统一管理各社团的工作，帮助解决社团的困难，协调社团间的活动，加强与兄弟院校相应团体的联系...<a href="/About">更多>></a></p></div>
+
+                    <div class="HeightTab clearfix"></div>
+                    <div class="topic">
+                        <div class="TopicTitle"><a href='/News'>热点新闻</a></div>
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+                    <div class="list">
+                        <dl><dt>2012/5/15</dt><dd><a href='/html/5147925030.html' target='_blank' title='羽毛球协会简介'>羽毛球协会简介</a></dd><dt>2012/5/23</dt><dd><a href='/html/6035144817.html' target='_blank' title='江西师范大学校级学生社团分类表'>江西师范大学校级学生社团分类表</a></dd><dt>2012/5/23</dt><dd><a href='/html/874506477.html' target='_blank' title='江西师范大学微博协会简介'>江西师范大学微博协会简介</a></dd><dt>2012/5/23</dt><dd><a href='/html/6295034522.html' target='_blank' title='关于江西师范大学学生社团联合会...'>关于江西师范大学学生社团联合会...</a></dd><dt>2012/5/23</dt><dd><a href='/html/0795464438.html' target='_blank' title='江西师范大学学生社团联合会主席...'>江西师范大学学生社团联合会主席...</a></dd></dl>
+                    </div>
+                    <div class="HeightTab clearfix"></div>
+                    <div class="topic">
+                        <div class="TopicTitle">友情链接</div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class='txt ColorLink'>
+                        <p> <a href="http://www.jxnu.edu.cn/">江西师范大学</a></p>
+                        <p><a href="http://jwc.jxnu.edu.cn/"> 江西师范大学教务在线</a></p>
+                        <p><a href="http://tw.jxnu.edu.cn/">  江西师范大学团委</a></p>
+                    </div>
+                    <div class=" clearfix"></div>
+                </div>
+                <!--right end-->
+                <div class='WidthTab2'> </div>
+                <!--left start-->
+                <div class="left">
+                    <div class="topic">
+                        <div class="TopicTitle"><a href='/Product'>社团简介</a></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!--ProductShow start-->
+                    <div class="ProductShow">
+                        <div class="hjnavC">
+                            <div class="hjnavleft">
+                                <ul>
+                                    <li class='hover1'><a href='Product/Mobile'>学术科技类</a></li>
+                                    <li><a href='Product/DigitalPlayer'>理论研究类</a></li>
+                                    <li><a href='Product/Pad'>社会实践类</a></li>
+                                    <li><a href='Product/GPS'>技能培养类</a></li>
+                                    <li><a href='Product/NoteBook'>体育休闲类</a></li>
+                                    <li><a href='Product/dv'>文学艺术类</a></li>
+                                </ul>
+                            </div>
+                            <div class="hjnavcn">
+                                <div class='hjone'>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/8259674739.html' target='_blank' title=' 科幻协会'><img src='/Content/images/up_images/201295191021.jpg' width='166' height='166' /><div class='albumtitle'> 科幻协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/0345159654.html' target='_blank' title='电脑爱好者协会'><img src='/Content/images/up_images/20129519659.jpg' width='166' height='166' /><div class='albumtitle'>电脑爱好者协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/6054731614.html' target='_blank' title='电子科技协会'><img src='/Content/images/up_images/201295191242.jpg' width='166' height='166' /><div class='albumtitle'>电子科技协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/4280237235.html' target='_blank' title='电子商务协会'><img src='/Content/images/up_images/201295191021.jpg' width='166' height='166' /><div class='albumtitle'>电子商务协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/825674739.html' target='_blank' title='材料科学协会'><img src='/Content/images/up_images/201252315730.jpg' width='166' height='166' /><div class='albumtitle'>材料科学协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/034159654.html' target='_blank' title='数学建模协会'><img src='/Content/images/up_images/201252315642.jpg' width='166' height='166' /><div class='albumtitle'>数学建模协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/605731614.html' target='_blank' title='IT爱好者协会'><img src='/Content/images/up_images/201252315613.jpg' width='166' height='166' /><div class='albumtitle'>IT爱好者协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/60125731614.html' target='_blank' title='ACS协会'><img src='/Content/images/up_images/20125231015613.jpg' width='166' height='166' /><div class='albumtitle'>ACS协会</div></a></div></div>
+                                </div>
+
+                                <div class='hjone'>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/210548529.html' target='_blank' title='心理协会'><img src='/Content/images/up_images/201252315514.jpg' width='166' height='166' /><div class='albumtitle'>心理协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/9854172030.html' target='_blank' title='拂晓英语爱好者协会'><img src='/Content/images/up_images/20111210171953.jpg' width='166' height='166' /><div class='albumtitle'>拂晓英语爱好者协会</div></a></div></div>
+
+                                </div>
+                                <div class='hjone'>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/210548529.html' target='_blank' title='志愿者协会'><img src='/Content/images/up_images/20124152315514.jpg' width='166' height='166' /><div class='albumtitle'>志愿者协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/210548529.html' target='_blank' title='职业发展协会'><img src='/Content/images/up_images/201241523155141.jpg' width='166' height='166' /><div class='albumtitle'>职业发展协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/210548529.html' target='_blank' title='星火协会'><img src='/Content/images/up_images/2012415231551412.jpg' width='166' height='166' /><div class='albumtitle'>星火协会</div></a></div></div>
+                                </div>
+                                <div class='hjone'>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/2783062333.html' target='_blank' title='就业创业协会'><img src='/Content/images/up_images/20111210172327.jpg' width='166' height='166' /><div class='albumtitle'>就业创业协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/2783062333.html' target='_blank' title='ICOoffice协会'><img src='/Content/images/up_images/201112101723271.jpg' width='166' height='166' /><div class='albumtitle'>ICOoffice协会</div></a></div></div>
+                                </div>
+                                <div class='hjone'>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='魔术爱好者协会'><img src='/Content/images/up_images/2011121017127.jpg' width='166' height='166' /><div class='albumtitle'>魔术爱好者协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='足球协会'><img src='/Content/images/up_images/2012051524332.jpg' width='166' height='166' /><div class='albumtitle'>足球协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='乒乓球协会'><img src='/Content/images/up_images/201205152312.jpg' width='166' height='166' /><div class='albumtitle'>乒乓球协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='羽毛球协会'><img src='/Content/images/up_images/20131221017127.jpg' width='166' height='166' /><div class='albumtitle'>羽毛球协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='电子竞技协会'><img src='/Content/images/up_images/2012321243231.jpg' width='166' height='166' /><div class='albumtitle'> 电子竞技协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='棋牌协会'><img src='/Content/images/up_images/201205121524332.jpg' width='166' height='166' /><div class='albumtitle'>棋牌协会</div></a></div></div>
+                                    @*<div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='旅行者社团'><img src='/Content/images/up_images/2012051532412312.jpg' width='166' height='166' /><div class='albumtitle'>旅行者社团</div></a></div></div>
+                                        <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='幻影轮滑社'><img src='/Content/images/up_images/20132101327127.jpg' width='166' height='166' /><div class='albumtitle'> 幻影轮滑社</div></a></div></div>
+                                        <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='健美操协会'><img src='/Content/images/up_images/201111321017127.jpg' width='166' height='166' /><div class='albumtitle'>健美操协会</div></a></div></div>
+                                        <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='VDS震舞糖街舞社团'><img src='/Content/images/up_images/201113221017127.jpg' width='166' height='166' /><div class='albumtitle'>VDS震舞糖街舞社团</div></a></div></div>*@
+                                </div>
+                                <div class="hjone">
+                                    <div class='albumblock'><div class='inner'><a href='/Product/1249561316.html' target='_blank' title='汉服协会'><img src='/Content/images/up_images/200923121017127.jpg' width='166' height='166' /><div class='albumtitle'>汉服协会</div></a></div></div>
+                                    <div class='albumblock'><div class='inner'><a href='/Product/8079131853.html' target='_blank' title='书画协会'><img src='/Content/images/up_images/20111210171819.jpg' width='166' height='166' /><div class='albumtitle'>书画协会</div></a></div></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <script src="~/Content/js/h.js"></script>
+                    <!--ProductShow end-->
+                    <div class="HeightTab clearfix"></div>
+                    <div class="topic">
+                        <div class="TopicTitle"><a href='/Product'>热门社团</a></div>
+                    </div>
+                    <div class=" clearfix"></div>
+                    <div class="blk_29">
+                        <div class="LeftBotton" id="LeftArr"></div>
+                        <div class="Cont" id="ISL_Cont_1">
+                            <!-- img list begin -->
+                            <div class='box'><a class='imgBorder' href='/Product/201112101723271.html' target='_blank' title='ICOoffice协会'><img alt='ICOoffice协会' src='/Content/images/up_images/201112101723271.jpg'><p>ICOoffice协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/0345159654.html' target='_blank' title='电脑爱好者协会'><img alt='电脑爱好者协会' src='/Content/images/up_images/20129519659.jpg'><p>电脑爱好者协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/034159654.html' target='_blank' title='数学建模协会'><img alt='数学建模协会' src='/Content/images/up_images/201252315642.jpg'><p>数学建模协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/1857041017.html' target='_blank' title='乒乓球协会'><img alt='乒乓球协会' src='/Content/images/up_images/201205152312.jpg'><p>乒乓球协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/319207841.html' target='_blank' title='足球协会'><img alt='足球协会' src='/Content/images/up_images/2012051524332.jpg'><p>足球协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/8259674739.html' target='_blank' title='材料科学协会'><img alt='材料科学协会' src='/Content/images/up_images/201295191021.jpg'><p>材料科学协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/825674739.html' target='_blank' title='材料科学协会'><img alt='材料科学协会' src='/Content/images/up_images/201252315730.jpg'><p>材料科学协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/6054731614.html' target='_blank' title='电子科技协会'><img alt='电子科技协会' src='/Content/images/up_images/201295191242.jpg'><p>电子科技协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/6035142153.html' target='_blank' title='体育星火协会'><img alt='体育星火协会' src='/Content/images/up_images/2012415231551412.jpg'><p>体育星火协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/605731614.html' target='_blank' title='IT爱好者协会'><img alt='IT爱好者协会' src='/Content/images/up_images/201252315613.jpg'><p>IT爱好者协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/9854172030.html' target='_blank' title='拂晓英语爱好者协会'><img alt='拂晓英语爱好者协会' src='/Content/images/up_images/20111210171953.jpg'><p>拂晓英语爱好者协会</p></a> </div>
+                            <div class='box'><a class='imgBorder' href='/Product/394728928.html' target='_blank' title='ACS协会'><img alt='ACS协会' src='/Content/images/up_images/20125231015613.jpg'><p>ACS协会</p></a> </div>
+                            <!--img list end -->材料科学协会
+                        </div>
+
+                        <div class="RightBotton" id="RightArr"></div>
+                    </div>
+                    <script language=javascript type=text/javascript>
+		<!--//--><![CDATA[//><!--
+		var scrollPic_02 = new ScrollPic();
+		scrollPic_02.scrollContId   = "ISL_Cont_1"; //
+		scrollPic_02.arrLeftId      = "LeftArr";//
+		scrollPic_02.arrRightId     = "RightArr"; //
+
+		scrollPic_02.frameWidth     = 696;//
+		scrollPic_02.pageWidth      = 696; //
+
+		scrollPic_02.speed          = 3; //
+		scrollPic_02.space          = 50; //
+		scrollPic_02.autoPlay       = true; //
+		scrollPic_02.autoPlayTime   = 3; //
+
+		scrollPic_02.initialize(); //
+
+		//--><!]]>
+                    </script>
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!--left end-->
+
+            </div>
+            <!--MainBlock end-->
+            <div class="HeightTab clearfix"></div>
+
+        </div>
+        <!--body end-->
+        <div class="HeightTab clearfix"></div>
+    </div>
+
+    <!--footer start-->
+    <div class="footer">
+
+        <link href="/Content/css/footer.css" rel="stylesheet" />
+        <div class="foot">
+            <span class="logofoot"></span>
+            <div class="adress">
+                <span><a href="http://www.uir.cn/">CP社团平台 | University of International Relations | UIR</a> </span>
+                <span>地址：江西省南昌</span>
+            </div>
+            <div class="copyright">
+                <span>京公网安备11040230042号</span>
+                <span>技术支持 | cp社团开发小组</span>
+            </div>
+        </div>
+
+    </div>
+    <!--footer end -->
+
+
+    <script type="text/javascript">
+window.onerror=function(){return true;}
+    </script>
+
+
+</body>
+</html>
